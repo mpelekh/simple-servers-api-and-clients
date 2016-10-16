@@ -10,11 +10,13 @@
     "type": "git",
     "url": "git+https://github.com/nickpeleh/test_different_nodejs_frameworks.git"
   },
-  "author": "",
   "author": "Nick Peleh",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/nickpeleh/test_different_nodejs_frameworks/issues"
   },
-  "homepage": "https://github.com/nickpeleh/test_different_nodejs_frameworks#readme"
+  "homepage": "https://github.com/nickpeleh/test_different_nodejs_frameworks#readme",
+  "dependencies": {
+    "boom": "^4.2.0"
+  }
 }
