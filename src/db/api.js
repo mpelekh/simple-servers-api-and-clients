@@ -1,5 +1,7 @@
 const fs = require('fs');
 const path = require('path');
+const crypto = require('crypto');
+const uuid = require('node-uuid');
 
 const FILE_AS_DB = path.join(__dirname, 'contacts.json');
 
@@ -56,6 +58,10 @@ function _insertIntoJson(obj) {
     if (!obj) {
         return Promise.reject(new Error(`Insert object cannot be null`));
     }
+
+    obj._id = crypto.randomBytes(12).toString('hex');
+    obj.created = new Date();
+    obj.guid = uuid.v4();
 
     return _getJson()
         .then(items => items.concat(obj))
