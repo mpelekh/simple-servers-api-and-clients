@@ -35,7 +35,12 @@ function contact(request, reply) {
 }
 
 function contactCreate(request, reply) {
-    reply(Boom.notFound());
+    const contact = request.params;
+
+    dbApi
+        .insert(contact)
+        .then(item => reply(item))
+        .catch(error => reply(Boom.wrap(error)));
 }
 
 function contactUpdate(request, reply) {
