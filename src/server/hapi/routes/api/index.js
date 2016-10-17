@@ -1,4 +1,5 @@
 const apiControllers = require('../../controllers/contacts');
+const apiValidators = require('../../validators/api');
 
 module.exports = [
     {
@@ -14,8 +15,8 @@ module.exports = [
     {
         method : 'POST',
         path   : '/api/contacts',
-        handler: apiControllers.contactCreate
-        //config : {validate: {payload: apiValidators}}
+        handler: apiControllers.contactCreate,
+        config : {validate: {payload: apiValidators}}
     },
     {
         method : 'PUT',
