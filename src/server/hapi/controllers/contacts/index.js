@@ -35,7 +35,7 @@ function contact(request, reply) {
 }
 
 function contactCreate(request, reply) {
-    const contact = request.params;
+    const contact = request.payload;
 
     dbApi
         .insert(contact)
