@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/nickpeleh/test_different_nodejs_frameworks#readme",
   "dependencies": {
-    "boom": "^4.2.0"
+    "boom": "^4.2.0",
+    "node-uuid": "^1.4.7"
   }
 }
