@@ -47,16 +47,18 @@ function contactUpdate(request, reply) {
     const { id } = request.params;
     const contact = request.payload;
 
-
     dbApi
         .update({_id: id}, contact)
         .then(item => reply(item))
         .catch(error => reply(Boom.wrap(error)));
-
-    reply(Boom.notFound());
 }
 
 function contactDelete(request, reply) {
-    reply(Boom.notFound());
+    const { id } = request.params;
+
+    dbApi
+        .remove({_id: id})
+        .then(() => reply())
+        .catch(error => reply(Boom.wrap(error)));
 }
 
