@@ -44,6 +44,15 @@ function contactCreate(request, reply) {
 }
 
 function contactUpdate(request, reply) {
+    const { id } = request.params;
+    const contact = request.payload;
+
+
+    dbApi
+        .update({_id: id}, contact)
+        .then(item => reply(item))
+        .catch(error => reply(Boom.wrap(error)));
+
     reply(Boom.notFound());
 }
 
