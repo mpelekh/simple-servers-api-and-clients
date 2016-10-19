@@ -1,7 +1,6 @@
 [
   {
     "_id": "5802a2b7dddb803b72cf64c2",
-    "index": 0,
     "guid": "d394fb06-012a-4493-8d0b-cf54fe6d9d49",
     "isActive": true,
     "picture": "http://placehold.it/32x32",
@@ -17,7 +16,6 @@
   },
   {
     "_id": "5802a2b7ec16b9b598e5ff72",
-    "index": 1,
     "guid": "d0518047-30dc-4c88-ad9e-e6424a3058e4",
     "isActive": true,
     "picture": "http://placehold.it/32x32",
@@ -33,7 +31,6 @@
   },
   {
     "_id": "5802a2b7bbb97c603b63c66f",
-    "index": 2,
     "guid": "144c556f-30a1-4bb6-8826-3b0e6ff9ae5b",
     "isActive": false,
     "picture": "http://placehold.it/32x32",
@@ -49,7 +46,6 @@
   },
   {
     "_id": "5802a2b7ff17e1f95c5513d2",
-    "index": 3,
     "guid": "53529b85-5b2e-4ed3-82e9-92ab32fa3ba3",
     "isActive": false,
     "picture": "http://placehold.it/32x32",
@@ -65,7 +61,6 @@
   },
   {
     "_id": "5802a2b796f78535b0bdddf2",
-    "index": 4,
     "guid": "135b1754-c2b1-4f6f-8a4c-3322eb87140a",
     "isActive": false,
     "picture": "http://placehold.it/32x32",
@@ -81,7 +76,6 @@
   },
   {
     "_id": "5802a2b78d0e52b7ad422aac",
-    "index": 5,
     "guid": "c1e8f57c-a24a-4e83-801f-73419775604b",
     "isActive": false,
     "picture": "http://placehold.it/32x32",
@@ -97,7 +91,6 @@
   },
   {
     "_id": "5802a2b7cd1ca60945f00d32",
-    "index": 6,
     "guid": "c051bf52-8c07-410f-ad33-4eea5452cfbe",
     "isActive": true,
     "picture": "http://placehold.it/32x32",
@@ -113,7 +106,6 @@
   },
   {
     "_id": "5802a2b7179e1a4c0c35d0e8",
-    "index": 7,
     "guid": "76a2c659-88cf-431c-bd7a-88ec62c1e2ec",
     "isActive": false,
     "picture": "http://placehold.it/32x32",
@@ -129,7 +121,6 @@
   },
   {
     "_id": "5802a2b72131b507d0c8a491",
-    "index": 8,
     "guid": "288b4a7c-f8be-4097-91a5-7838e1c7009a",
     "isActive": false,
     "picture": "http://placehold.it/32x32",
@@ -145,7 +136,6 @@
   },
   {
     "_id": "5802a2b73088597dcda3e445",
-    "index": 9,
     "guid": "5e79ad40-fb1e-46ba-922a-df51fb78414c",
     "isActive": true,
     "picture": "http://placehold.it/32x32",
@@ -161,7 +151,6 @@
   },
   {
     "_id": "5802a2b761b4dde1c260cf91",
-    "index": 10,
     "guid": "77b73fe4-59ef-4d9c-818c-82db9a3df930",
     "isActive": true,
     "picture": "http://placehold.it/32x32",
@@ -177,7 +166,6 @@
   },
   {
     "_id": "5802a2b701c643e3a49f9b09",
-    "index": 11,
     "guid": "be3d3c11-39dc-412a-99ba-c3f9538124b2",
     "isActive": false,
     "picture": "http://placehold.it/32x32",
@@ -193,7 +181,6 @@
   },
   {
     "_id": "5802a2b7d7561d539381863d",
-    "index": 12,
     "guid": "9876d3c3-3787-49a4-bcf3-513f982d0b94",
     "isActive": true,
     "picture": "http://placehold.it/32x32",
@@ -209,7 +196,6 @@
   },
   {
     "_id": "5802a2b7db6f04839a67a69a",
-    "index": 13,
     "guid": "a66c8feb-0312-4270-92bf-e3fc6327a8e5",
     "isActive": false,
     "picture": "http://placehold.it/32x32",
@@ -225,7 +211,6 @@
   },
   {
     "_id": "5802a2b7d0f09297e6e2a989",
-    "index": 14,
     "guid": "7f7cae98-a778-4673-bdfd-b201d014decd",
     "isActive": false,
     "picture": "http://placehold.it/32x32",
@@ -241,7 +226,6 @@
   },
   {
     "_id": "5802a2b71f7710166d4184f2",
-    "index": 15,
     "guid": "ba034f9a-aa67-4a8b-af2c-b3777d04c7f1",
     "isActive": false,
     "picture": "http://placehold.it/32x32",
@@ -257,7 +241,6 @@
   },
   {
     "_id": "5802a2b72ba5dd073a93b1f1",
-    "index": 16,
     "guid": "43eac95b-5dd1-4246-b054-4a674bbf085d",
     "isActive": true,
     "picture": "http://placehold.it/32x32",
@@ -273,7 +256,6 @@
   },
   {
     "_id": "5802a2b74e2c4697fb18c075",
-    "index": 17,
     "guid": "da6123e0-eceb-45b4-8e21-83aebf4ac1e6",
     "isActive": false,
     "picture": "http://placehold.it/32x32",
@@ -289,7 +271,6 @@
   },
   {
     "_id": "5802a2b776e87f7dd1d7d8a3",
-    "index": 18,
     "guid": "3409491b-61f8-441f-b22b-fd2925691516",
     "isActive": false,
     "picture": "http://placehold.it/32x32",
@@ -305,7 +286,6 @@
   },
   {
     "_id": "5802a2b735f459b3fba49be7",
-    "index": 19,
     "guid": "c6706502-689a-4d3a-b18f-7ed8acb5b078",
     "isActive": false,
     "picture": "http://placehold.it/32x32",
