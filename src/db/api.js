@@ -79,7 +79,8 @@ function _updateJson(query = {}, value = null) {
     return _getJson()
         .then(items => items.map((item, index, array) => {
             if(_id === item._id) {
-                array[index] = value;
+
+                array[index] = Object.assign({}, array[index], value);
             }
 
             return array[index];
