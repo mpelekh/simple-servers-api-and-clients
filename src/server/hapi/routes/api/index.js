@@ -21,8 +21,8 @@ module.exports = [
     {
         method : 'PUT',
         path   : '/api/contacts/{id}',
-        handler: apiControllers.contactUpdate
-        //config : {validate: {payload: apiValidators}}
+        handler: apiControllers.contactUpdate,
+        config : {validate: {payload: apiValidators}}
     },
     {
         method : 'DELETE',
