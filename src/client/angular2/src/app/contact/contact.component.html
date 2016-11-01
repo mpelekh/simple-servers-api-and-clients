@@ -1,3 +1,19 @@
-<p>
-    I am from contact component
-</p>
+<div>
+    <div *ngIf="!isEditMode">
+        <span class="contact-name-header">
+            Name:
+        </span>
+        <span>{{ contact.name }}</span>
+        <small class="pointer" (click)="editContact($event)">[edit]</small>
+        <small class="pointer" (click)="removeContact(contact, $event)">[remove]</small>
+    </div>
+    <div *ngIf="isEditMode">
+        <span class="contact-name-header">
+            Name:
+        </span>
+        <input type="text" [(ngModel)]="newName" />
+        <small class="pointer" (click)="applyEdit(newName, $event)">[ok]</small>
+        <small class="pointer" (click)="cancelEdit($event)">[cancel]</small>
+    </div>
+</div>
+
