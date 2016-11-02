@@ -11,8 +11,8 @@
         <span class="contact-name-header">
             Name:
         </span>
-        <input type="text" [(ngModel)]="newName" />
-        <small class="pointer" (click)="applyEdit(newName, $event)">[ok]</small>
+        <input type="text" [(ngModel)]="contact.name" />
+        <small class="pointer" (click)="applyEdit(contact, $event)">[ok]</small>
         <small class="pointer" (click)="cancelEdit($event)">[cancel]</small>
     </div>
 </div>

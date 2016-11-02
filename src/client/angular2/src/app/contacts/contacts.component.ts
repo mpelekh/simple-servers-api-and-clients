@@ -25,13 +25,19 @@ export class ContactsComponent implements OnInit {
     }
 
     removeContact($event: any): void {
-        const contact: Contact = $event.contact;
-        console.log(contact);
+        const removedContact: Contact = $event.contact;
+        this.contacts = this.contacts.filter(contact => contact._id !== removedContact._id);
     }
 
     editContact($event: any): void {
-        console.log('--- all contacts', this.contacts);
-        console.log('--- $event', $event);
+        const editedContact: Contact = $event.contact;
+        this.contacts = this.contacts.map(contact => {
+            if(contact._id === editedContact._id) {
+                contact = editedContact;
+            }
+
+            return contact;
+        });
     }
 
 }

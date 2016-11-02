@@ -12,11 +12,9 @@ export class ContactComponent implements OnInit {
     @Output() remove = new EventEmitter();
     @Output() edit = new EventEmitter();
     isEditMode: boolean = false;
-    newName: string;
 
     ngOnInit() {
         this.contact = Object.assign({}, this.contact);
-        this.newName = this.contact.name;
     }
 
     removeContact(contact: Contact, event: any) {
@@ -27,10 +25,9 @@ export class ContactComponent implements OnInit {
         this.isEditMode = true;
     }
 
-    applyEdit(newName: string, event: any) {
-        this.contact = Object.assign({}, this.contact, {name: this.newName});
-        this.isEditMode = false;
-        this.edit.emit({ contact: this.contact });
+    applyEdit(editedContact: Contact, event: any) {
+        const contact = Object.assign({}, editedContact);
+        this.edit.emit({ contact });
     }
 
     cancelEdit(event: any){
