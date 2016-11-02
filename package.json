@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "server_hapi": "cd src/server/hapi && node server.js"
+    "server_hapi": "cd src/server/hapi && node server.js",
+    "client_angular2": "cd src/client/angular2 && npm start"
   },
   "repository": {
     "type": "git",
