@@ -1,4 +1,4 @@
-# Test server and clients framework (in progress)
+# Test server and client frameworks (in progress)
 
 Simple server realization for API on nodejs frameworks and simple clients.
 
@@ -9,7 +9,7 @@ Clienr realized on:
   - [Angular 2](https://angular.io/)
   
 ```
-$ cd test_different_nodejs_frameworks
+$ cd simple-servers-api-and-clients
 $ npm install
 ```
 
