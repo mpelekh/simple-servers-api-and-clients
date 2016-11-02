@@ -15,8 +15,8 @@ export class ContactsComponent implements OnInit {
     getContacts(): void {
         this.contactsService
             .getContacts()
-            .subscribe((res: Contact[]) => {
-                this.contacts = res;
+            .subscribe((contacts: Contact[]) => {
+                this.contacts = contacts;
             });
     }
 
