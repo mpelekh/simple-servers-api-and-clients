@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
     selector: 'my-app',
     template: `
         <h1>Angular Start App</h1>
-        <contacts></contacts>    
+        <router-outlet></router-outlet>    
     `
 })
 

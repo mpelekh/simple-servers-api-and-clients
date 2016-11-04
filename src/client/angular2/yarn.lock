@@ -28,6 +28,10 @@
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/@angular/platform-browser/-/platform-browser-2.1.2.tgz#1f07c3a5668ac2381a7324f9001521deede159bc"
 
+"@angular/router":
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/@angular/router/-/router-3.1.2.tgz#1046c943ace795027e2e5057df8c897da968fcd6"
+
 "@types/core-js@^0.9.34":
   version "0.9.34"
   resolved "https://registry.yarnpkg.com/@types/core-js/-/core-js-0.9.34.tgz#72c521d8e59fdaa8b65f76db71fa53c82c7c21c5"
