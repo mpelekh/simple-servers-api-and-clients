@@ -5,10 +5,13 @@ import { FormsModule } from '@angular/forms';
 import {RouterModule} from '@angular/router';
 import {AppRoutes} from './app.routes';
 import { AppComponent }  from './app.component';
-import { ContactsComponent } from './contacts/contacts.component';
-import { ContactComponent } from './contact/contact.component';
+import { ContactsListViewComponent } from './contacts-list-view/contacts-list-view.component';
+import { ContactDetailViewComponent } from './contact-detail-view/contact-detail-view.component';
 
-import { ContactsService } from './contacts/contacts.service';
+import { ContactsListComponent } from './contacts-list-view/contacts-list/contacts-list.component';
+import { ContactDetailComponent } from './contact-detail-view/contact-detail/contact-detail.component';
+
+import { ContactsService } from './shared/contacts.service';
 
 @NgModule({
   imports: [ 
@@ -19,8 +22,10 @@ import { ContactsService } from './contacts/contacts.service';
   ],
   declarations: [ 
     AppComponent,
-    ContactsComponent, 
-    ContactComponent
+    ContactsListViewComponent,
+    ContactDetailViewComponent, 
+    ContactsListComponent,
+    ContactDetailComponent
   ],
   providers: [
     ContactsService
