@@ -10,6 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "boom": "^4.2.0",
+    "node-uuid": "^1.4.7",
     "hapi": "^15.1.1",
     "hapi-cors-headers": "^1.0.0",
     "joi": "^9.1.1"
