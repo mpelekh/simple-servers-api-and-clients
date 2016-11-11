@@ -16,13 +16,20 @@ export class ContactsService {
         return this.http
             .get(this.apiUrl)
             .map((res: Response) => res.json() as Contact[])
-            .catch((error:any) => Observable.throw(error.json().error || 'Server error'));
+            .catch((error:any) => Observable.throw(error || 'Server error'));
     }
 
     getContact(id: string): Observable<Contact> {
         return this.http
             .get(`${this.apiUrl}/${id}`)
             .map((res: Response) => res.json() as Contact)
-            .catch((error:any) => Observable.throw(error.json().error || 'Server error'));
+            .catch((error:any) => Observable.throw(error || 'Server error'));
     }
+
+    updateContact(contact: Contact): Observable<Contact> {
+        return this.http
+            .put(`${this.apiUrl}/${contact._id}`, contact)
+            .map((res: Response) => res.json() as Contact)
+            .catch((error:any) => Observable.throw(error || 'Server error'));
+    } 
 }
