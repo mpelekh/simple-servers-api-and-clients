@@ -76,16 +76,19 @@ function _updateJson(query = {}, value = null) {
         return Promise.reject(new Error(`Update parameters are incorrect`));
     }
 
+    let updatedObject = null;
+
     return _getJson()
         .then(items => items.map((item, index, array) => {
             if(_id === item._id) {
-
-                array[index] = Object.assign({}, array[index], value);
+                updatedObject = Object.assign({}, array[index], value); 
+                array[index] = updatedObject;
             }
 
             return array[index];
         }))
-        .then(items => _writeToJson(items));
+        .then(items => _writeToJson(items))
+        .then(() => updatedObject);
 }
 
 function _removeFromJson(query = {}) {
