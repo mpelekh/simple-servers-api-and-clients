@@ -1,3 +1,10 @@
 <div>
 	<pre>{{ contact | json }}</pre>
+	
+	<button (click)="back.emit()">
+		Back
+	</button>
+	<button (click)="edit.emit(contact)">
+		Edit
+	</button>
 </div>

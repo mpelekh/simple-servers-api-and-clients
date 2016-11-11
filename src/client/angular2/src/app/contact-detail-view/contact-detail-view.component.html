@@ -1,2 +1,5 @@
-<contact-detail [contact]="contact">
+<contact-detail 
+    [contact]="contact"
+    (edit)="navigateToEditor($event)"
+    (back)="navigateToList()">
 </contact-detail>

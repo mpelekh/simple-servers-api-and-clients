@@ -1,4 +1,4 @@
-import { Component, OnInit, OnChanges, Input, SimpleChanges } from '@angular/core';
+import { Component, OnInit, OnChanges, Input, Output, EventEmitter, SimpleChanges } from '@angular/core';
 import { Contact } from '../../shared/contact.model';
 
 @Component({
@@ -8,6 +8,8 @@ import { Contact } from '../../shared/contact.model';
 })
 export class ContactDetailComponent implements OnInit, OnChanges {
     @Input() contact: Contact;
+    @Output() edit = new EventEmitter<Contact>();
+    @Output() back = new EventEmitter();
 
     constructor() { }
 
