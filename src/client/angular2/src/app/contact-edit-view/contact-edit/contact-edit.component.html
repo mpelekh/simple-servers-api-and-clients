@@ -1,0 +1,14 @@
+<p>Edit component</p>
+<pre>{{contact | json}}</pre>
+
+<label class="active" for="name">Name </label>
+<input name="name" type="text" [(ngModel)]="contact.name">
+
+<br>
+
+<label class="active" for="email">Email</label>
+<input name="email" type="text" [(ngModel)]="contact.email">
+
+<button (click)="save.emit(contact)">
+    Save
+</button>
