@@ -15,6 +15,8 @@ import { Root } from './containers/Root';
 
 const store = configureStore();
 
+window.store = store;
+
 ReactDOM.render(
   <Root store={store} />,
   document.getElementById('root')
