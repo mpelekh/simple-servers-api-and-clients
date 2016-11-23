@@ -15,7 +15,7 @@ module.exports = class Root extends Component {
        * calls in component hierarchy below.
        */
       <Provider store={store}>
-        <App />
+        <Contacts />
       </Provider>
     );
   }

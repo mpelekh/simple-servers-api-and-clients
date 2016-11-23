@@ -1,5 +1,4 @@
 import { combineReducers } from 'redux';
-import counter from './counter';
 import contacts from './contacts';
 
 /**
@@ -16,7 +15,6 @@ import contacts from './contacts';
  * More info: http://rackt.org/redux/docs/api/combineReducers.html
  */
 const rootReducer = combineReducers({
-  counter, // you might be used to: counter: counter,
   contacts
 });
 

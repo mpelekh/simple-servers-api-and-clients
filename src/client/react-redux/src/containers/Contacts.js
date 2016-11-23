@@ -1,11 +1,11 @@
 import React, { Component, PropTypes } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import * as ContactsActions from '../actions/ContactsActions';
-import Counter from '../components/Counter';
-import Footer from '../components/Footer';
 
-export class ContactsList extends Component {
+import * as ContactsActions from '../actions/ContactsActions';
+import ContactsList from '../components/ContactsList';
+
+export class Contacts extends Component {
 
   static propTypes = {
     contacts: PropTypes.array.isRequired,
@@ -13,30 +13,23 @@ export class ContactsList extends Component {
     actions: PropTypes.object.isRequired
   }
 
+  componentDidMount() {
+    this.props.actions.loadAllContacts();
+  }
+
   render() {
-    const { contacts, actions } = this.props;
-    return (
-      <div>
-        <ul>
-            {contacts.map(contact => (
-              <li key={contact.id}>
-                {contact.name}
-              </li>
-            ))}
-        </ul>
-      </div>
-    );
+    return <ContactsList {...this.props} />;
   }
 }
 
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(ContactsList);
+)(Contacts);
 
 function mapStateToProps(state) {
-  const { contacts } = state; 
-  
+  const { contacts } = state;
+
   return {
     contacts: contacts.contacts,
     isLoaded: contacts.isLoaded
