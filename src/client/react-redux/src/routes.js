@@ -6,6 +6,6 @@ import Contacts from './containers/Contacts';
 
 export default (
     <Router history={browserHistory}>
-            <Route path="/" component={Contacts}></Route>
+        <Route path="/" component={Contacts}></Route>
     </Router>
 );
