@@ -17,8 +17,7 @@ module.exports = class Root extends Component {
        */
       <Provider store={store}>
         <div>
-          <Contacts />
-          {/* Being the dev version of our Root component, we include DevTools below */}
+          {this.props.children}
           <DevTools />
         </div>
       </Provider>

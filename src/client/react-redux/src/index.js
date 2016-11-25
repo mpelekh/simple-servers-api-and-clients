@@ -12,12 +12,11 @@ import './styles/main.scss';
  */
 import { configureStore } from './store/configureStore';
 import { Root } from './containers/Root';
+import routes from './routes';
 
 const store = configureStore();
 
-window.store = store;
-
 ReactDOM.render(
-  <Root store={store} />,
+  <Root store={store}>{routes}</Root>,
   document.getElementById('root')
 );
