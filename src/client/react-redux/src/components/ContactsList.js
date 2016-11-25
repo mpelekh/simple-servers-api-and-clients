@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react';
+import { Link, browserHistory } from 'react-router'
 
 class ContactsList extends Component {
     
@@ -17,7 +18,7 @@ class ContactsList extends Component {
                 <ul>
                     {contacts.map(contact => (
                         <li key={contact._id}>
-                            {contact.name}
+                            <Link to={'/contacts/' + contact._id}>{contact.name}</Link>
                         </li>
                     ))}
                 </ul>

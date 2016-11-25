@@ -1,5 +1,6 @@
 import { combineReducers } from 'redux';
 import contacts from './contacts';
+import contact from './contact';
 
 /**
  * combineReducers is important to understand. As your app might grow in size
@@ -15,7 +16,8 @@ import contacts from './contacts';
  * More info: http://rackt.org/redux/docs/api/combineReducers.html
  */
 const rootReducer = combineReducers({
-  contacts
+  contacts,
+  contact
 });
 
 export default rootReducer;

@@ -1,18 +1,18 @@
-import { GET_CONTACTS_REQUEST, GET_CONTACTS_SUCCESS } from '../constants/ActionTypes';
+import { GET_CONTACT_REQUEST, GET_CONTACT_SUCCESS } from '../constants/ActionTypes';
 import { API_URL } from '../constants/api';
 
-export function loadAllContacts() {
+export function loadContact(id) {
     return dispatch => {
         dispatch({
-            type: GET_CONTACTS_REQUEST
+            type: GET_CONTACT_REQUEST
         });
 
-        fetch(API_URL)
+        fetch(`${API_URL}/${id}`)
             .then(response => response.json())
-            .then(contacts => {
+            .then(contact => {
                 return dispatch({
-                    type: GET_CONTACTS_SUCCESS,
-                    payload: contacts
+                    type: GET_CONTACT_SUCCESS,
+                    payload: contact
                 });
             })
             .catch(error => {
